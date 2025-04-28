@@ -25,7 +25,7 @@ Please view [README-EN.md](https://github.com/chvin/react-tetris/blob/master/REA
 
 从阿里云或华为云镜像仓库拉取镜像，注意填写镜像标签，镜像仓库中没有`latest`标签
 
-容器内部端口 3000 可通过设置环境变量`MINISERVE_PORT`的值来指定监听端口
+容器内部端口 3000
 
 ```bash
 docker pull swr.cn-north-4.myhuaweicloud.com/firfe/tetris-1:2019.05.15
