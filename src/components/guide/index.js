@@ -49,8 +49,9 @@ export default class Guide extends React.Component {
         </div>
         <div className={`${style.guide} ${style.left}`}>
           <p>
-            <a href="https://github.com/chvin/react-tetris" rel="noopener noreferrer" target="_blank" title={i18n.linkTitle[lan]}>{`${i18n.github[lan]}:`}</a><br />
-            <iframe
+            <a href="https://github.com/chvin/react-tetris" rel="noopener noreferrer" target="_blank" title1={i18n.linkTitle[lan]} title="查看原项目仓库">原项目仓库</a><br />
+            <a href="https://github.com/Firfr/tetris-1" rel="noopener noreferrer" target="_blank" title1={i18n.linkTitle[lan]} title="查看镜像制作仓库">镜像制作仓库</a>
+            {/* <iframe
               src="https://ghbtns.com/github-btn.html?user=chvin&repo=react-tetris&type=star&count=true"
               frameBorder="0"
               scrolling="0"
@@ -66,18 +67,11 @@ export default class Guide extends React.Component {
               width="170px"
               height="20px"
               style={{ [transform]: 'scale(1.68)', [`${transform}Origin`]: 'center left' }}
-            />
+            /> */}
           </p>
-          <div className={style.space}>SPACE</div>
+          <div className={style.space}>空格键</div>
         </div>
-        { this.state.QRCode !== '' ? (
-          <div className={`${style.guide} ${style.qr}`}>
-            <img
-              src={this.state.QRCode}
-              alt={i18n.QRCode[lan]}
-            />
-          </div>
-        ) : null }
+        { null }
       </div>
     );
   }
